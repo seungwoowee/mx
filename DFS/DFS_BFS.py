@@ -14,7 +14,7 @@ def DFS(start_node):
         # 4) 만약 node가 찾고자 하는 target이라면 서치 중단!
         if node == TARGET:
             print('The target found.')
-        return node
+            return node
 
         # 5) node의 자식을 expand 해서 children에 저장
         children = expand(node)
@@ -50,3 +50,5 @@ def BFS(start_node):
         queue.extend(children)
 
         # 7) 이렇게 target을 찾거나, 전부 탐색해서 queue가 빌 때까지 while문 반복
+
+
